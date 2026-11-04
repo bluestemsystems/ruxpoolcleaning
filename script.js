@@ -30,7 +30,6 @@ form.addEventListener('submit', (e) => {
     `Phone: ${data.get('phone') || ''}`,
     `Address: ${address}`,
     `Service: ${data.get('service')}`,
-    `Property: ${data.get('property')}`,
     `Pool size: ${data.get('size')}`,
     `Extras: ${extras.length ? extras.join(', ') : 'None'}`,
     '',

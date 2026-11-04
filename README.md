@@ -33,6 +33,6 @@ Remove any existing "parking" A records or URL forwarding first. DNS can take a 
 
 ## Common edits
 
-- **Prices:** search `index.html` for `$140` and the "Simple pricing" section.
-- **Add a phone number:** add it in the quote section (`contact-line`) and the footer.
+- **Prices:** edit the "Simple pricing" section in `index.html`.
+- **Phone number:** (830) 743-9406 appears in the top menu, the quote section and the footer. Search `index.html` for `743-9406` to change it.
 - **Quote form:** it opens the visitor's email app with their details filled in, addressed to ruxpoolcleaning@gmail.com. If you later want submissions to arrive without the visitor's email app, a free Formspree form can be swapped in.
