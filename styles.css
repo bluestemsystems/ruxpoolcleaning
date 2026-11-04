@@ -97,6 +97,14 @@ h3 { font-size: 1.25rem; }
 .icon { font-size: 2rem; width: 58px; height: 58px; display: grid; place-items: center; border-radius: 50%; background: #fff6d6; margin-bottom: 14px; }
 
 /* Pricing */
+.cards.four { grid-template-columns: repeat(4, 1fr); }
+.plan.panel { background: var(--aqua-light); border-color: var(--aqua-light); }
+.plan.panel dl { margin: 8px 0 24px; flex: 1; }
+.plan.panel dl div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 14px 0; border-bottom: 1px dashed #b9dfe9; }
+.plan.panel dl div:last-child { border-bottom: 0; }
+.plan.panel dt { font-weight: 700; color: var(--navy); }
+.plan.panel dt small { display: block; font-weight: 600; color: var(--muted); font-size: .88rem; }
+.plan.panel dd { margin: 0; font-family: "Fredoka", sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--navy); }
 .plans { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 860px; }
 .plan { border: 2px solid #e1e8f2; border-radius: var(--radius); padding: 32px; position: relative; display: flex; flex-direction: column; }
 .plan.featured { border-color: var(--navy); box-shadow: var(--shadow); }
@@ -123,7 +131,8 @@ h3 { font-size: 1.25rem; }
 
 /* About */
 .about { display: grid; grid-template-columns: 1fr 1.3fr; gap: 48px; align-items: center; }
-.about img { max-width: 380px; margin-inline: auto; }
+.about > * { min-width: 0; }
+.about img { width: 100%; max-width: 380px; margin-inline: auto; }
 .about p { color: var(--muted); }
 
 /* FAQ */
@@ -164,7 +173,7 @@ details p { margin: 12px 0 0; color: var(--muted); }
 
 /* Responsive */
 @media (max-width: 900px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
+  .cards, .cards.four { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: 1fr; }
   .quote-grid, .about { grid-template-columns: 1fr; }
 }
@@ -185,7 +194,7 @@ details p { margin: 12px 0 0; color: var(--muted); }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-art { order: -1; }
   .hero-art img { max-width: 280px; }
-  .cards, .plans, .extras { grid-template-columns: 1fr; }
+  .cards, .cards.four, .plans, .extras { grid-template-columns: 1fr; }
   .form .row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; text-align: left; }
   .section { padding: 64px 0; }
