@@ -99,6 +99,9 @@ h3 { font-size: 1.25rem; }
 
 /* Pricing */
 .cards.four { grid-template-columns: repeat(4, 1fr); }
+.seal { position: absolute; top: -46px; right: -28px; width: 104px; height: 104px; transform: rotate(12deg); filter: drop-shadow(0 6px 10px rgba(19, 41, 90, .22)); z-index: 2; pointer-events: none; }
+.seal svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.seal-t { font-family: "Fredoka", sans-serif; font-weight: 700; font-size: 15px; fill: #13295a; letter-spacing: .5px; }
 .plan .tag.tag-aqua { background: var(--aqua); color: var(--white); }
 .plan ul.items li { padding: 14px 0; border-bottom: 1px dashed #d5e2ee; }
 .plan ul.items li:last-child { border-bottom: 0; }
@@ -112,6 +115,8 @@ h3 { font-size: 1.25rem; }
 .addons dl div { display: flex; flex-direction: column; gap: 2px; background: var(--aqua-light); border-radius: 12px; padding: 14px 18px; }
 .addons dt { font-weight: 700; color: var(--navy); }
 .addons dd { white-space: nowrap; margin: 0; font-family: "Fredoka", sans-serif; font-weight: 700; font-size: 1.4rem; color: var(--navy); }
+.addons dd.tiers { font-family: "Nunito", sans-serif; font-size: .85rem; font-weight: 600; color: var(--muted); white-space: normal; margin-top: 2px; }
+.addons dd.tiers span { white-space: nowrap; font: inherit; color: inherit; }
 .addons dd span { font-family: "Nunito", sans-serif; font-size: .9rem; font-weight: 600; color: var(--muted); }
 .plan.panel { background: var(--aqua-light); border-color: var(--aqua-light); }
 .plan.panel dl { margin: 8px 0 24px; flex: 1; }
@@ -193,6 +198,7 @@ details p { margin: 12px 0 0; color: var(--muted); }
 @media (max-width: 900px) {
   .cards, .cards.four { grid-template-columns: repeat(2, 1fr); }
   .plans.three { grid-template-columns: 1fr; max-width: 560px; gap: 32px; }
+  .seal { right: -8px; top: -40px; width: 88px; height: 88px; }
   .addons { max-width: 560px; padding: 22px; }
   .addons dl { grid-template-columns: 1fr; flex-basis: 100%; }
   .steps { grid-template-columns: 1fr; }
