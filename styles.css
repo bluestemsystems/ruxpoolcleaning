@@ -198,7 +198,7 @@ details p { margin: 12px 0 0; color: var(--muted); }
 @media (max-width: 900px) {
   .cards, .cards.four { grid-template-columns: repeat(2, 1fr); }
   .plans.three { grid-template-columns: 1fr; max-width: 560px; gap: 32px; }
-  .seal { right: -8px; top: -40px; width: 88px; height: 88px; }
+  .seal { right: -8px !important; top: -40px !important; width: 88px !important; height: 88px !important; }
   .addons { max-width: 560px; padding: 22px; }
   .addons dl { grid-template-columns: 1fr; flex-basis: 100%; }
   .steps { grid-template-columns: 1fr; }
