@@ -227,3 +227,11 @@ details p { margin: 12px 0 0; color: var(--muted); }
   .section { padding: 64px 0; }
 }
 
+
+/* Quote form extras */
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.form-thanks h3 { margin: 0 0 6px; }
+.form-thanks p { margin: 0; color: var(--muted); }
+.form .btn:disabled { opacity: .6; cursor: wait; transform: none; }
+
+[hidden] { display: none !important; }
